@@ -7,3 +7,6 @@
 - source_spec: `_bmad-output/specs/spec-epic-2/stories/2-human-gated-escalation.md`
   summary: MLflow's LangChain tracer logs `on_interrupt`/`on_resume` AttributeErrors on every escalation pause and resume.
   evidence: Seen on every live escalation run; the installed MLflow has no handlers for LangGraph interrupt events. Traces are still complete. Fix by upgrading MLflow or filtering the log in `run_agent.py` (read-only in Epic 2).
+- source_spec: `_bmad-output/specs/spec-epic-3/stories/1-eval-run-and-code-scorers.md`
+  summary: The eval does not retry rate-limit (429) errors, so free-tier limits show up as zero scores.
+  evidence: Live Groq run e8285a04…: T-1050 and T-1058 failed on Groq's 8000 tokens-per-minute limit even with one worker. A backoff-and-retry in `predict`, or a count of infrastructure failures in story 2's report, would separate agent quality from quota.
