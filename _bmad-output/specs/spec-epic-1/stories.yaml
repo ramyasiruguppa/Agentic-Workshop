@@ -1,0 +1,12 @@
+- id: "1"
+  title: Triage-decision schema
+  description: >-
+    Build the enforced triage-decision shape (CAP-1): allowed categories,
+    priorities and routes, the route paired to its category per
+    TRIAGE_POLICY.md, and errors that name the offending field.
+- id: "2"
+  title: Seed loader
+  description: >-
+    Build load_seed.py (CAP-2, CAP-3): load seed/tickets.csv and
+    seed/customers.csv into app.db as tables tickets and customers that
+    mcp/triage_server.py can read, with a second run giving the same database.
