@@ -1,0 +1,232 @@
+{
+  "note": "Saturday triage eval, first 10 labelled tickets. No results.json shape was found in cases/*/BRIEF.md and cases/check.py does not exist upstream; reshape once the checker is available.",
+  "mlflow_run_id": "358a3bb6cf4347ac95bb8aeef7fae729",
+  "cases": [
+    {
+      "id": "T-1042",
+      "decision": {
+        "category": "billing",
+        "priority": "P2",
+        "route": "billing-team",
+        "rationale": "This ticket is assigned to billing with P2 priority because money is at stake due to double charges, and the Enterprise rule does not apply since the customer has fewer than 3 open tickets."
+      },
+      "error": null,
+      "scores": {
+        "priority_match": 1,
+        "tool_order": 1,
+        "valid_schema": 1,
+        "category_match": 1
+      },
+      "tokens": {
+        "input_tokens": 7560,
+        "output_tokens": 684,
+        "total_tokens": 8686,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "id": "T-1043",
+      "decision": {
+        "category": "bug",
+        "priority": "P3",
+        "route": "bug-team",
+        "rationale": "The export button is broken in Firefox but workable in Chrome, which falls under the P3 degraded but workable rule."
+      },
+      "error": null,
+      "scores": {
+        "valid_schema": 1,
+        "category_match": 1,
+        "tool_order": 1,
+        "priority_match": 1
+      },
+      "tokens": {
+        "input_tokens": 7530,
+        "output_tokens": 568,
+        "total_tokens": 8454,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "id": "T-1044",
+      "decision": {
+        "category": "access",
+        "priority": "P1",
+        "route": "access-team",
+        "rationale": "A whole team is locked out due to SSO changes, meeting the P1 criteria under the priority policy."
+      },
+      "error": null,
+      "scores": {
+        "valid_schema": 1,
+        "category_match": 1,
+        "tool_order": 1,
+        "priority_match": 1
+      },
+      "tokens": {
+        "input_tokens": 11414,
+        "output_tokens": 813,
+        "total_tokens": 12726,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "id": "T-1045",
+      "decision": {
+        "category": "billing",
+        "priority": "P4",
+        "route": "billing-team",
+        "rationale": "This is an inquiry about changing plan billing frequency, which is categorized as billing and assigned P4 under the rule for questions and account detail changes."
+      },
+      "error": null,
+      "scores": {
+        "priority_match": 1,
+        "category_match": 1,
+        "tool_order": 1,
+        "valid_schema": 1
+      },
+      "tokens": {
+        "input_tokens": 7500,
+        "output_tokens": 546,
+        "total_tokens": 8368,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "id": "T-1046",
+      "decision": {
+        "category": "performance",
+        "priority": "P3",
+        "route": "performance-team",
+        "rationale": "Classified as P3 degraded but workable performance issue routed to performance-team, with no Enterprise rule bump since the customer is on the Team plan."
+      },
+      "error": null,
+      "scores": {
+        "valid_schema": 1,
+        "category_match": 1,
+        "priority_match": 1,
+        "tool_order": 1
+      },
+      "tokens": {
+        "input_tokens": 7796,
+        "output_tokens": 552,
+        "total_tokens": 8674,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "id": "T-1047",
+      "decision": {
+        "category": "billing",
+        "priority": "P2",
+        "route": "billing-team",
+        "rationale": "The customer is requesting a refund for a duplicate charge, which is categorized as billing, routed to the billing-team, and assigned priority P2 under the rule for money at stake."
+      },
+      "error": null,
+      "scores": {
+        "valid_schema": 1,
+        "category_match": 1,
+        "priority_match": 1,
+        "tool_order": 1
+      },
+      "tokens": {
+        "input_tokens": 7540,
+        "output_tokens": 600,
+        "total_tokens": 8500,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "id": "T-1048",
+      "decision": {
+        "category": "bug",
+        "priority": "P1",
+        "route": "bug-team",
+        "rationale": "This is classified as a P1 bug because nothing is saving due to API 500 errors on every write request, which meets the P1 criteria for an outage where nothing saves."
+      },
+      "error": null,
+      "scores": {
+        "category_match": 1,
+        "valid_schema": 1,
+        "tool_order": 1,
+        "priority_match": 1
+      },
+      "tokens": {
+        "input_tokens": 11664,
+        "output_tokens": 956,
+        "total_tokens": 13222,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "id": "T-1049",
+      "decision": null,
+      "error": "GoogleRateLimitError: 429 RESOURCE_EXHAUSTED (no decision produced)",
+      "scores": {
+        "valid_schema": 0,
+        "category_match": 0,
+        "tool_order": 0,
+        "priority_match": 0
+      },
+      "tokens": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "T-1050",
+      "decision": null,
+      "error": "GoogleRateLimitError: 429 RESOURCE_EXHAUSTED (no decision produced)",
+      "scores": {
+        "priority_match": 0,
+        "valid_schema": 0,
+        "category_match": 0,
+        "tool_order": 0
+      },
+      "tokens": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "T-1051",
+      "decision": null,
+      "error": "GoogleRateLimitError: 429 RESOURCE_EXHAUSTED (no decision produced)",
+      "scores": {
+        "tool_order": 0,
+        "category_match": 0,
+        "valid_schema": 0,
+        "priority_match": 0
+      },
+      "tokens": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  ],
+  "scores": {
+    "per_scorer_mean": {
+      "valid_schema": 0.7,
+      "category_match": 0.7,
+      "priority_match": 0.7,
+      "tool_order": 0.7
+    },
+    "scored_cases": 10,
+    "rationale_judge": "not run: GROQ_API_KEY is not set"
+  },
+  "tokens": {
+    "agent": {
+      "input_tokens": 61004,
+      "output_tokens": 4719,
+      "total_tokens": 68630
+    },
+    "coding": {
+      "input_tokens": 1322,
+      "output_tokens": 805834,
+      "cache_read_input_tokens": 222949999,
+      "cache_creation_input_tokens": 1277529,
+      "assistant_turns": 604
+    }
+  }
+}
